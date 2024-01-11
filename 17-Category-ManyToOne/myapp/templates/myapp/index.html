@@ -1,0 +1,12 @@
+<div class="card-columns"> <!-- here -->
+    {% for flower in flowers %}
+    <div class="jumbotron">
+        <div class="container">
+        <h1 class="display-3">{{ flower.title }}</h1>
+        </div>
+        </div>
+    <p class="card-text">{{ flower.description }}</p>
+        <a href="#" class="card-link">{{ flower.category }}</a> 
+        <h1 class="display-4">{{flower.category.title}}</h1>
+    {% endfor %}
+    </div>

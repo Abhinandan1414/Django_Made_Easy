@@ -1,0 +1,10 @@
+<div class="card-columns"> <!-- here -->
+    {% for flower in flowers %}
+    <div class="card">
+    <div class="card-body">
+    <h5 class="card-title">{{ flower.title }}</h5>
+    <p class="card-text">{{ flower.description }}</p> <!-- here -->
+    </div>
+    </div>
+    {% endfor %}
+    </div>
